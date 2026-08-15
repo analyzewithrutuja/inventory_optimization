@@ -1,0 +1,48 @@
+# Raw & intermediate photo dumps — large, not source code
+CV_photos/
+CV_photos.zip
+CV_photos_clean/
+CV_photos_jpg/
+CV_photos_resized/
+
+# Downloaded pretrained weights — re-downloaded automatically by ultralytics
+*.pt
+
+# Processed dataset images — large and regenerable via scripts/make_split.py
+# (data.yaml itself is kept, it's tiny and useful as a reference)
+yolo_dataset_split/train/
+yolo_dataset_split/val/
+yolo_dataset_split/test/
+yolo_dataset_raw/
+
+# Training run artifacts (checkpoints, per-epoch batch previews) —
+# curated result images are copied into results/ instead
+runs/
+
+# Other large intermediate artifacts from the annotation pipeline
+annotation_pilot/
+test_cross_prompt_preview/
+webcam_detections/
+*.npy
+*.pkl
+annotation_full_run*.log
+Test.v2i.yolov8*/
+industry_dataset3*/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Exploratory sorting/dedup artifacts from data collection, not part of the documented pipeline
+all_files_sorted.txt
+chrono_order.txt
+cluster_assignment.json
+cnn_cluster_assignment.json
+cnn_filenames.json
+mixed_pool.txt
+ocr_run.log
+photo_timeline.txt
+photo_timeline_sorted.txt
+subcluster_assignment.json

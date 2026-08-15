@@ -1,0 +1,7 @@
+path: C:/Users/rutuj/Documents/Fall 24/AI and Data Analytics/inventory_optimization/yolo_dataset_split
+train: train/images
+val: val/images
+test: test/images
+
+nc: 5
+names: ['barilla', 'corn_flakes', 'indomie', 'keya_piri_piri', 'nut_bars']
